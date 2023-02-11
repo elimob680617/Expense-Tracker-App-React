@@ -1,38 +1,132 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #f6f6f6;
+  color: #0d1d2c;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 30px;
+  font-family: sans-serif;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border-radius: 1pa solid #ccc;
+}
+
+.resultSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.expenseBox {
+  width: 135px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.expenseBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 60px;
+  width: 135px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.expenseBox span {
+  font-weight: bold;
+  color: green;
+}
+
+.btn {
+  outline: none;
+  padding: 8px 16px;
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  border-radius: 5px;
+  border: 1px solid #4f46e5;
+}
+
+.primary {
+  color: #fff;
+  background-color: #4f46e5;
+  border: none;
+}
+
+.cancel {
+  background-color: #fff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+.radioBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+
+.radioBox label {
+  margin-left: 5px;
+}
+
+.transaction {
+  border-radius: 5px;
+  background-color: #eef2ff;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 4px solid green;
+}
+
+input.search {
+  display: block;
+  border-radius: 5px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  background-color: #efefef;
+  width: 100%;
+  margin: 20px auto;
 }
